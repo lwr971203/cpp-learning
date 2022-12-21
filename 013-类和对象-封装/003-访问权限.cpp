@@ -1,0 +1,1 @@
+//和C#中的规则基本一致。。。。不过只有三个public private protected
