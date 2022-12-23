@@ -2,7 +2,7 @@
 using namespace std;
 #include <string>
 
-template<class NameType,class AgeType = int> //类模板可以有默认类型参数
+template<class NameType,class AgeType = int> //类模板可以有默认类型参数，函数模板没有
 class Person {
 public:
 	NameType _name;

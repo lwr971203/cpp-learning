@@ -21,7 +21,7 @@
     <ClCompile Include="002-类模板和函数模板的区别.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="003-类模板中的成员函数的调用时机.cpp">
+    <ClCompile Include="003-类模板的编译过程.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="004-类模板对象做函数的参数.cpp">
@@ -36,7 +36,7 @@
     <ClCompile Include="007-类模板分文件.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="008-类模板与友元.cpp">
+    <ClCompile Include="008-类模板与友元函数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="009-类模板案例-数组类封装.cpp">
