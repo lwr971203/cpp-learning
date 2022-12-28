@@ -26,9 +26,10 @@ void Test1() {
 	myVector1.push_back(p4);
 	myVector1.push_back(p5);
 
+	//看看<>中什么数据类型解引用出来就是什么数据类型
 	for (vector<Person>::iterator it = myVector1.begin(); it != myVector1.end(); it++)
 	{
-		//cout << "姓名:" << it->_name << ",年龄:" << it->_age << endl;
+		//cout << "姓名:" << it->_name << ",年龄:" << it->_age << endl; //这里可以当成指针一样用是因为底层对->重载了
 		cout << "姓名:" << (*it)._name << ",年龄:" << (*it)._age << endl;
 	}
 }
@@ -46,6 +47,7 @@ void Test2(){
 	myVector2.push_back(&p4);
 	myVector2.push_back(&p5);
 
+	//看看<>中什么数据类型解引用出来就是什么数据类型
 	for (vector<Person*>::iterator it = myVector2.begin(); it != myVector2.end(); it++)
 	{
 		cout << (*it)->_name << "," << (*it)->_age << endl;

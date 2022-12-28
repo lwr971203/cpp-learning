@@ -10,7 +10,7 @@ private:
 	//长度
 	int _length;
 	//堆区维护的数组
-	T *_arr;
+	T* _arr;
 
 public:
 	MyArray(int capacity)
@@ -19,7 +19,7 @@ public:
 		this->_length = 0;
 		this->_arr = new T[this->_capacity]; //开辟的空间调用的是T类型的默认无参构造函数。
 	}
-	MyArray(const MyArray &arr) {
+	MyArray(const MyArray& arr) {
 		this->_capacity = arr._capacity;
 		this->_length = arr._length;
 
@@ -30,7 +30,7 @@ public:
 			this->_arr[i] = arr._arr[i];
 		}
 	}
-	MyArray& operator==(MyArray &arr) {
+	MyArray& operator=(MyArray& arr) {
 		this->_capacity = arr._capacity;
 		this->_length = arr._length;
 
@@ -55,7 +55,7 @@ public:
 	}
 
 	//尾插
-	bool InsertEnd(T &t) {
+	bool InsertEnd(T& t) {
 		if (this->_length == this->_capacity)
 		{
 			return false;
@@ -78,11 +78,11 @@ public:
 
 	//重载索引,为了能让返回值能作为左值，返回引用
 	T& operator[](int index) {
-		if (index >= 0 && index < this->_length - 1)
+		if (index >= 0 && index <= this->_length - 1)
 		{
 			return this->_arr[index];
 		}
-		return this->_arr[this->_length - 1];
+		//return this->_arr[this->_length - 1];
 	}
 
 

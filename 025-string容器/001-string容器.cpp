@@ -14,4 +14,6 @@ int main() {
 
 	string s4(10,'a');
 	cout <<"s4="<< s4 << endl;
+
+	string s5 = "ni hao"; //由C++的尿性,这里应该是隐式调用了构造函数
 }

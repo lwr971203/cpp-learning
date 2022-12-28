@@ -9,7 +9,7 @@ public:
 	}
 
 	//注:运算符不允许是静态的成员函数
-	//static operator()(string msg) {
+	//static void operator()(string msg) {
 
 	//}
 };
